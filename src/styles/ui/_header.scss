@@ -87,6 +87,7 @@
         height: 100%;
         display: flex;
         color: #302a31;
+        padding: 0 10px;
         align-items: center;
         text-decoration: none;
         transition: color 0.2s linear;
@@ -151,6 +152,7 @@
         height: 100%;
         display: flex;
         font-size: 16px;
+        padding: 0 10px;
         align-items: center;
         text-decoration: none;
     }
@@ -172,4 +174,15 @@
 
 .contacts {
     display: flex;
+
+    &__item,
+    &__link {
+        color: #302a31;
+        text-decoration: none;
+    }
+}
+
+.fa-phone-alt,
+.fa-envelope {
+    color: #c1a067;
 }

@@ -5,6 +5,8 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const webpack = require('webpack');
 
+const deployPath = process.env.DEPLOY_KEY || '';
+
 const {
   prod_Path,
   src_Path
@@ -58,7 +60,7 @@ module.exports = {
           options: {
             name: '[name].[ext]',
             outputPath: 'images',
-            publicPath: '/images',
+            publicPath: `${deployPath}/images`,
           },
         }],
       },
@@ -83,7 +85,10 @@ module.exports = {
     new HtmlWebpackPlugin({
       hash: true,
       template: './' + src_Path + '/index.html',
-      filename: 'index.html'
+      filename: 'index.html',
+      minify: {
+        collapseWhitespace: true
+      }
     }),
     new webpack.ProvidePlugin({
       $: "jquery/dist/jquery.min.js",
