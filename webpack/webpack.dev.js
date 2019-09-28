@@ -54,7 +54,20 @@ module.exports = {
         test: /\.(png|jpg|gif|svg)$/,
         use: [{
           loader: 'file-loader',
+          options: {
+            outputPath: 'images',
+            publicPath: '/images',
+          },
         }],
+      },
+      {
+        test: /\.(html)$/,
+        use: {
+          loader: 'html-loader',
+          options: {
+            interpolate: true
+          }
+        }
       }
     ]
   },
