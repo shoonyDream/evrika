@@ -1,0 +1,23 @@
+input {
+    border: none;
+    outline: none;
+    display: block;
+}
+
+.form__input {
+    width: 100%;
+    color: #231f20;
+    max-width: 100%;
+    font-size: 0.875rem;
+    line-height: normal;
+    padding: 20px 15px 20px;
+    border-bottom: 3px solid #d9d9d6;
+    transition: border-color 0.2s, background-color 0.2s;
+
+    &::placeholder {
+    	color: #302a31;
+    	font-size: 14px;
+    	text-transform: uppercase;
+    }
+}
+

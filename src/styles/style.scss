@@ -1,2 +1,16 @@
+//base
 @import 'modules/vendor';
-@import 'modules/base';
+@import 'modules/variables';
+@import 'modules/main';
+@import 'modules/reset';
+@import 'modules/typography';
+
+//ui
+@import 'ui/header';
+@import 'ui/main';
+@import 'ui/footer';
+@import 'ui/forms';
+
+//component styles
+@import '../components/slider/slider';
+

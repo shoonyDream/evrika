@@ -1,0 +1,27 @@
+.page-wrapper {
+	flex: 1 0 auto;
+	overflow: hidden;
+}
+
+body {
+    margin-top: 0 !important;
+}
+
+.container {
+	max-width: 1120px;
+	padding-left: 20px;
+	padding-right: 20px;
+	margin-left: auto;
+	margin-right: auto;
+
+	&--wide {
+		max-width: 1300px;
+	}
+}
+
+@media (max-width: 768px) {
+	.container {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+}
