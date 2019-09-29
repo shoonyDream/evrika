@@ -1,15 +1,18 @@
-.swiper-container--work {
+.slider-simple {
 	position: relative;
-	padding: 50px;
 
-	.swiper-slide {
-		margin-top: 0;
+	.swiper-container--work {
+		position: relative;
 
-		&__wrapper {
-			position: relative;
+		.swiper-slide {
+			margin-top: 0;
+
+			&__wrapper {
+				position: relative;
+			}
 		}
-	}
 
+	}
 	.swiper-controls {
 		margin-top: 0;
 	}
@@ -65,7 +68,7 @@
 	}
 
 	.swiper-button-next {
-		right: 0;
+		right: -90px;
 		top: 50%;
 		bottom: 0;
 		margin-top: -3rem;
@@ -75,7 +78,7 @@
 	}
 
 	.swiper-button-prev {
-		left: 0;
+		left: -90px;
 		top: 50%;
 		bottom: 0;
 		margin-top: -3rem;

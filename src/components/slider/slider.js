@@ -23,8 +23,8 @@ var arWorkSwiper = [];
 $('.js-swiper--work').each(function (index) {
   var $el = $(this),
     $elPag = $el.find('.swiper-pagination--work'),
-    $elNavLeft = $el.find('.swiper-button-next--work'),
-    $elNavRight = $el.find('.swiper-button-prev--work'),
+    $elNavLeft = $el.siblings('.swiper-controls').find('.swiper-button-next--work'),
+    $elNavRight = $el.siblings('.swiper-controls').find('.swiper-button-prev--work'),
     $elFraction = $el.find('.swiper-fraction--work'),
     extraOptions = $el.data('slider-options') || {};
 

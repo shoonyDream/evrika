@@ -34,7 +34,18 @@
 }
 
 .logo-list {
+    margin-left: -90px;
+    margin-right: -90px;
+    display: flex;
+    justify-content: space-between;
+
     &__item {
         margin-top: 0;
+    }
+
+    &-text {
+        &__item {
+            margin-top: 25px;
+        }
     }
 }
