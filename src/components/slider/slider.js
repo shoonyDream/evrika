@@ -25,7 +25,8 @@ $('.js-swiper--work').each(function (index) {
     $elPag = $el.find('.swiper-pagination--work'),
     $elNavLeft = $el.find('.swiper-button-next--work'),
     $elNavRight = $el.find('.swiper-button-prev--work'),
-    $elFraction = $el.find('.swiper-fraction--work');
+    $elFraction = $el.find('.swiper-fraction--work'),
+    extraOptions = $el.data('slider-options') || {};
 
   $el.addClass(`js-swiper--work-${index}`);
   $elPag.addClass(`swiper-pagination--work-${index}`);
@@ -51,8 +52,10 @@ $('.js-swiper--work').each(function (index) {
     navigation: {
       nextEl: `.swiper-button-next--work-${index}`,
       prevEl: `.swiper-button-prev--work-${index}`,
-    }
+    },
+    ...JSON.parse(extraOptions)
   });
+
 
   arWorkSwiper[index].init();
 });
