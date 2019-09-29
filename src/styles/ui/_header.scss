@@ -40,12 +40,15 @@
         height: 85px;
         position: relative;
         background-color: #c1a067;
+        transition: box-shadow 0.2s linear;
 
         > img {
             top: 0;
             left: 0;
             right: 0;
             bottom: 0;
+            width: 34px;
+            height: 40px;
             margin: auto;
             position: absolute;
         }
@@ -56,6 +59,10 @@
             right: 10px;
             font-size: 10px;
             position: absolute;
+        }
+
+        &:hover {
+            box-shadow: 0 4px 12px 0 rgba(0,0,0,.2);
         }
     }
 }
@@ -142,6 +149,7 @@
         &--special {
             .main-nav__link {
                 padding: 0 50px;
+                text-transform: uppercase;
                 background-color: #c16774;
             }
         }
@@ -170,19 +178,54 @@
         height: 100%;
         padding-top: 10px;
     }
+
+    &__contacts {
+        margin-top: 23px;
+    }
 }
 
 .contacts {
     display: flex;
+    margin-top: -23px;
+    margin-left: -20px;
+    margin-right: -20px;
+    justify-content: space-between;
+
+    &__item {
+        margin-top: 23px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 
     &__item,
     &__link {
         color: #302a31;
+        font-weight: 600;
         text-decoration: none;
     }
+
+}
+* + .contacts__link {
+    margin-left: 15px;
 }
 
 .fa-phone-alt,
-.fa-envelope {
+.fa-envelope,
+.fa-search {
     color: #c1a067;
+}
+
+.fa-search {
+    top: 50%;
+    right: 16px;
+    font-size: 16px;
+    position: absolute;
+    transform: translateY(-50%);
+    transition: color 0.2s linear;
+    color: rgba(193, 160, 103, 0.5);
+}
+
+.icon-pie {
+    width: 14px;
+    height: 14px;
 }

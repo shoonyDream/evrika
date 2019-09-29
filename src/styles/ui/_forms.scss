@@ -6,18 +6,36 @@ input {
 
 .form__input {
     width: 100%;
-    color: #231f20;
+    color: #302a31;
     max-width: 100%;
     font-size: 0.875rem;
     line-height: normal;
     padding: 20px 15px 20px;
-    border-bottom: 3px solid #d9d9d6;
-    transition: border-color 0.2s, background-color 0.2s;
+    border-bottom: 3px solid;
+    border-bottom-color: rgba(193, 160, 103, 0.5);
+    transition: border-color 0.2s;
 
     &::placeholder {
+    	opacity: 1;
     	color: #302a31;
-    	font-size: 14px;
+    	font-size: 12px;
     	text-transform: uppercase;
+    	transition: opacity 0.2s linear;
+    }
+
+    &:focus {
+    	border-bottom-color: rgba(193, 160, 103, 1);
+
+    	+ .fa-search {
+    		color: rgba(193, 160, 103, 1);
+    	}
+
+    	&::placeholder {
+	    	opacity: 0.5;
+	    }
     }
 }
 
+.form__item--search {
+	position: relative;
+}
