@@ -1,8 +1,8 @@
 .link {
-    color: #302a31;
+    color: $baltic-sea-color;
     transition: color 0.2s linear;
 
     &:hover {
-        color: #c1a067;
+        color: $twine-color;
     }
 }

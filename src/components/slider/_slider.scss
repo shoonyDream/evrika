@@ -1,0 +1,108 @@
+.swiper-container--work {
+	position: relative;
+
+	.swiper-slide {
+		margin-top: 0;
+
+		&__wrapper {
+			position: relative;
+		}
+
+		&__title {
+			position: absolute;
+			bottom: 0;
+			margin-top: 0;
+			display: block;
+			width: 100%;
+			background-color: rgba(000,000,000,0.5);
+			color: red;
+			text-align: center;
+			font-size: 13px;
+			padding: 0.35rem;
+		}
+	}
+
+	.swiper-controls {
+		margin-top: 0;
+	}
+
+	.swiper-navigation {
+		display: flex;
+		align-items: center;
+		margin-right: 1.5rem;
+	}
+
+	.swiper-button-next, .swiper-button-prev {
+		position: relative;
+		width: 3.75rem;
+		height: 3.75rem;
+		margin-top: 0;
+		outline: none;
+		background-size: 50% 50%;
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-color: red;
+	}
+
+	.swiper-pagination {
+		position: relative;
+		display: flex;
+		margin-top: 0;
+		justify-content: center;
+
+		&-bullets {
+			bottom: 0;
+			margin-top: 1.5625rem;
+		}
+
+		&-bullet {
+			margin-top: 0;
+			margin-left: 0.3125rem;
+			margin-right: 0.3125rem;
+			border: solid 1px red;
+			background-color: transparent;
+			border-radius: 0;
+			outline: none;
+			width: 0.5rem;
+			height: 0.5rem;
+			opacity: 1;
+
+			&:hover {
+				border: solid 1px pink;
+			}
+		}
+
+		&-bullet-active {
+			background-color: pink;
+			border: solid 1px pink;
+		}
+	}
+
+	.swiper-button-next {
+		background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 27 44'%3E%3Cpath d='M27 22L5 44l-2.1-2.1L22.8 22 2.9 2.1 5 0l22 22z' fill='%23ffffff'/%3E%3C/svg%3E");
+		right: 0;
+		position: absolute;
+		top: 50%;
+		margin-top: -3rem;
+		bottom: 0;
+		transition: background-color 0.2s linear;
+	}
+
+	.swiper-button-prev {
+		background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 27 44'%3E%3Cpath d='M0 22L22 0l2.1 2.1L4.2 22l19.9 19.9L22 44 0 22z' fill='%23ffffff'/%3E%3C/svg%3E");
+		left: 0;
+		position: absolute;
+		top: 50%;
+		margin-top: -3rem;
+		bottom: 0;
+		transition: background-color 0.2s linear;
+	}
+
+	.swiper-button-next:hover, .swiper-button-prev:hover {
+		background-color: pink;
+	}
+
+	.slide__img {
+		width: 100%;
+	}
+}

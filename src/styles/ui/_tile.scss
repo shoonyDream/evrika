@@ -1,0 +1,73 @@
+.tile {
+	display: flex;
+	flex-direction: column;
+
+	& + & {
+		margin-top: 0;
+	}
+
+	&__img {
+		height: 0;
+		overflow: hidden;
+		position: relative;
+		padding-bottom: 66.66%;
+
+		.tile__link {
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			position: absolute;
+		}
+	}
+
+	&__img img {
+		width: 100%;
+		height: 100%;
+		margin-top: 0;
+		display: block;
+		object-fit: cover;
+	}
+
+	&__body {
+		width: 100%;
+		margin-top: 0;
+		display: flex;
+		padding-top: 0.875rem;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	&__link {
+		width: 100%;
+		margin-top: 0;
+		line-height: 1;
+		display: inherit;
+		position: relative;
+	}
+
+	&__title {
+		margin-top: 0;
+		max-width: 100%;
+		line-height: 1.57;
+		font-size: 0.875rem;
+		display: inline-block;
+	}
+
+	&__preview {
+		max-width: 100%;
+		font-weight: 300;
+		margin-top: 0.625rem;
+	}
+
+	&__label {
+		font-weight: 400;
+		text-transform: uppercase;
+
+		&--red {
+			line-height: 1.36;
+			font-size: 0.6875rem;
+			background-color: transparent;
+		}
+	}
+}

@@ -8,11 +8,11 @@ body {
 }
 
 .container {
+	margin-left: auto;
 	max-width: 1120px;
+	margin-right: auto;
 	padding-left: 20px;
 	padding-right: 20px;
-	margin-left: auto;
-	margin-right: auto;
 
 	&--wide {
 		max-width: 1300px;

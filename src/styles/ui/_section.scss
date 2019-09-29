@@ -1,0 +1,33 @@
+.section {
+    + .section {
+        margin-top: 80px;
+    }
+
+    &__title {
+        width: 100%;
+        line-height: 1;
+        font-size: 36px;
+        font-weight: 600;
+        text-align: center;
+        padding-bottom: 25px;
+        color: $baltic-sea-color;
+        text-transform: uppercase;
+        border-bottom: 1px solid $twine-color;
+    }
+
+    &__header {
+        display: flex;
+        max-width: 420px;
+        margin-left: auto;
+        margin-right: auto;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    &__subtitle {
+        font-size: 14px;
+        margin-top: 30px;
+        font-weight: 600;
+        color: $twine-color;
+    }
+}

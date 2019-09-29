@@ -2,13 +2,13 @@
     flex: none;
     font-size: 13px;
     position: relative;
-    background-color: #fff;
+    background-color: $white;
 
     &__top {
         height: 40px;
-        color: #302a31;
         position: relative;
-        border-bottom: 1px solid #eceaed;
+        color: $baltic-sea-color;
+        border-bottom: 1px solid $mischka;
 
         > .container {
             height: 100%;
@@ -28,7 +28,7 @@
 
     &__nav {
         height: 60px;
-        background-color: #302a31;
+        background-color: $baltic-sea-color;
 
         > .container {
             height: 100%;
@@ -39,7 +39,7 @@
         width: 85px;
         height: 85px;
         position: relative;
-        background-color: #c1a067;
+        background-color: $twine-color;
         transition: box-shadow 0.2s linear;
 
         > img {
@@ -55,8 +55,8 @@
 
         > span {
             top: 8px;
-            color: #fff;
             right: 10px;
+            color: $white;
             font-size: 10px;
             position: absolute;
         }
@@ -93,25 +93,25 @@
     &__link {
         height: 100%;
         display: flex;
-        color: #302a31;
+        color: $baltic-sea-color;
         padding: 0 10px;
         align-items: center;
         text-decoration: none;
         transition: color 0.2s linear;
 
         &:hover {
-            color: #c1a067;
+            color: $twine-color;
         }
     }
 
     &__sup {
-        color: #fff;
+        color: $white;
         width: 15px;
         height: 15px;
         font-size: 9px;
         text-align: center;
         border-radius: 50%;
-        background-color: #c1a067;
+        background-color: $twine-color;
     }
 
     &__services {
@@ -130,7 +130,7 @@
     }
 
     &__item + &__item {
-        border-left: 1px solid #eceaed;
+        border-left: 1px solid $mischka;
     }
 }
 
@@ -150,14 +150,14 @@
             .main-nav__link {
                 padding: 0 50px;
                 text-transform: uppercase;
-                background-color: #c16774;
+                background-color: $contessa;
             }
         }
     }
 
     &__link {
-        color: #fff;
         height: 100%;
+        color: $white;
         display: flex;
         font-size: 16px;
         padding: 0 10px;
@@ -199,9 +199,9 @@
 
     &__item,
     &__link {
-        color: #302a31;
         font-weight: 600;
         text-decoration: none;
+        color: $baltic-sea-color;
     }
 
 }
@@ -212,7 +212,7 @@
 .fa-phone-alt,
 .fa-envelope,
 .fa-search {
-    color: #c1a067;
+    color: $twine-color;
 }
 
 .fa-search {
