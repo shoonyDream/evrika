@@ -8,19 +8,6 @@
 		&__wrapper {
 			position: relative;
 		}
-
-		&__title {
-			position: absolute;
-			bottom: 0;
-			margin-top: 0;
-			display: block;
-			width: 100%;
-			background-color: rgba(000,000,000,0.5);
-			color: red;
-			text-align: center;
-			font-size: 13px;
-			padding: 0.35rem;
-		}
 	}
 
 	.swiper-controls {
@@ -34,20 +21,20 @@
 	}
 
 	.swiper-button-next, .swiper-button-prev {
-		position: relative;
-		width: 3.75rem;
-		height: 3.75rem;
 		margin-top: 0;
 		outline: none;
+		width: 3.75rem;
+		height: 3.75rem;
+		position: relative;
 		background-size: 50% 50%;
-		background-position: center center;
 		background-repeat: no-repeat;
+		background-position: center center;
 	}
 
 	.swiper-pagination {
-		position: relative;
 		display: flex;
 		margin-top: 0;
+		position: relative;
 		justify-content: center;
 
 		&-bullets {
@@ -56,16 +43,16 @@
 		}
 
 		&-bullet {
-			margin-top: 0;
-			margin-left: 0.3125rem;
-			margin-right: 0.3125rem;
-			border: solid 1px red;
-			background-color: transparent;
-			border-radius: 0;
+			opacity: 1;
 			outline: none;
 			width: 0.5rem;
 			height: 0.5rem;
-			opacity: 1;
+			margin-top: 0;
+			border-radius: 0;
+			border: solid 1px red;
+			margin-left: 0.3125rem;
+			margin-right: 0.3125rem;
+			background-color: transparent;
 
 			&:hover {
 				border: solid 1px pink;
@@ -78,23 +65,23 @@
 	}
 
 	.swiper-button-next {
-		background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 27 44'%3E%3Cpath d='M27 22L5 44l-2.1-2.1L22.8 22 2.9 2.1 5 0l22 22z' fill='%23c1a067'/%3E%3C/svg%3E");
 		right: 0;
-		position: absolute;
 		top: 50%;
-		margin-top: -3rem;
 		bottom: 0;
+		margin-top: -3rem;
+		position: absolute;
 		transition: background-color 0.2s linear;
+		background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 27 44'%3E%3Cpath d='M27 22L5 44l-2.1-2.1L22.8 22 2.9 2.1 5 0l22 22z' fill='%23c1a067'/%3E%3C/svg%3E");
 	}
 
 	.swiper-button-prev {
-		background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 27 44'%3E%3Cpath d='M0 22L22 0l2.1 2.1L4.2 22l19.9 19.9L22 44 0 22z' fill='%23c1a067'/%3E%3C/svg%3E");
 		left: 0;
-		position: absolute;
 		top: 50%;
-		margin-top: -3rem;
 		bottom: 0;
+		margin-top: -3rem;
+		position: absolute;
 		transition: background-color 0.2s linear;
+		background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 27 44'%3E%3Cpath d='M0 22L22 0l2.1 2.1L4.2 22l19.9 19.9L22 44 0 22z' fill='%23c1a067'/%3E%3C/svg%3E");
 	}
 
 	.swiper-button-next,
