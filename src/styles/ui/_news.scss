@@ -1,0 +1,145 @@
+.news-container {
+    display: flex;
+    margin-top: -60px;
+    margin-left: -35px;
+    position: relative;
+    margin-right: -35px;
+}
+
+
+.news-list {
+    max-width: 50%;
+    flex-basis: 50%;
+    margin-top: 60px;
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-bottom: 30px;
+
+    &--background {
+	    position: relative;
+	    // background-color: #f9f9f9;
+
+	    .news-item + .news-item {
+			border-top: none;
+		}
+
+	    .news-item__img + .news-item__body {
+			margin-top: 20px;
+			position: relative;
+			margin-left: -80px;
+	    }
+	}
+
+	&__link {
+		text-align: center;
+	}
+}
+
+.news-item {
+	display: flex;
+	padding-top: 30px;
+	padding-right: 30px;
+	padding-bottom: 30px;
+
+	& + & {
+		margin-top: 0;
+		border-top: 1px solid $mischka;
+	}
+
+	&__preview {
+		width: 100%;
+		margin-top: 10px;
+	}
+
+	&__img {
+		height: 0;
+		width: 100%;
+		flex-shrink: 0;
+		max-width: 255px;
+		overflow: hidden;
+		flex-basis: 255px;
+		position: relative;
+		padding-bottom: 30%;
+
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			display: block;
+			margin-top: 0;
+		}
+
+		+ .news-item__body {
+			padding-left: 1.875rem;
+		}
+
+		.news-item__link {
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			position: absolute;
+		}
+	}
+
+	&__body {
+		width: 100%;
+		margin-top: 0;
+		display: flex;
+		flex: 0 1 100%;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	&__title {
+		max-width: 100%;
+		font-size: 16px;
+		line-height: 1.39;
+		display: inline-block;
+		text-transform: uppercase;
+	}
+
+	&__text {
+		width: 100%;
+		font-size: 14px;
+		line-height: 1.4;
+		margin-top: 23px;
+	}
+
+	&__link {
+		width: 100%;
+		margin-top: 0;
+		line-height: 1;
+		display: inherit;
+		text-decoration: none;
+		color: $baltic-sea-color;
+
+		&:hover {
+			color: $twine-color;
+		}
+	}
+
+	.details {
+		margin-top: 23px;
+	}
+}
+
+.details {
+	display: flex;
+	align-items: baseline;
+
+	&__body {
+		margin-top: 0;
+		line-height: 1;
+		position: relative;
+		margin-left: 12px;
+		padding-left: 12px;
+	}
+
+	&__date {
+		font-size: 13px;
+		line-height: 1.25;
+		color: $twine-color;
+		white-space: nowrap;
+	}
+}

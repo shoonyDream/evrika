@@ -17,7 +17,7 @@ body {
 // Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
 //
 b, strong {
-	font-weight: 600;
+	font-weight: 700;
 }
 
 em, i, dfn, cite {
@@ -82,7 +82,7 @@ pre {
 }
 
 .content {
-	* + * {
+	> * + * {
 		margin-top: 2.5rem;
 	}
 

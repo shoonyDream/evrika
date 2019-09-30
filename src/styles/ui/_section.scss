@@ -8,7 +8,7 @@
         line-height: 1;
         font-size: 36px;
         line-height: 1.4;
-        font-weight: 600;
+        font-weight: 700;
         text-align: center;
         padding-bottom: 25px;
         color: $baltic-sea-color;
@@ -21,6 +21,7 @@
         max-width: 420px;
         margin-left: auto;
         margin-right: auto;
+        position: relative;
         align-items: center;
         flex-direction: column;
     }
@@ -28,8 +29,26 @@
     &__subtitle {
         font-size: 14px;
         margin-top: 30px;
-        font-weight: 600;
+        font-weight: 700;
         color: $twine-color;
+    }
+
+    &__body {
+        margin-top: 60px;
+    }
+
+    &--half-background {
+        position: relative;
+
+        &:before {
+            top: 0;
+            right: 0;
+            width: 50%;
+            content: '';
+            height: 100%;
+            position: absolute;
+            background-color: #f9f9f9;
+        }
     }
 }
 

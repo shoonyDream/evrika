@@ -1,8 +1,23 @@
 .link {
+	line-height: 1.2;
+    text-decoration: none;
     color: $baltic-sea-color;
     transition: color 0.2s linear;
 
     &:hover {
         color: $twine-color;
+    }
+
+    &--revert {
+    	font-size: 14px;
+    	font-weight: 700;
+    	color: $twine-color;
+    	text-transform: uppercase;
+    	border-bottom: 1px solid transparent;
+    	transition: border-bottom-color 0.2s linear;
+
+    	&:hover {
+    		border-bottom-color: $twine-color;
+    	}
     }
 }
