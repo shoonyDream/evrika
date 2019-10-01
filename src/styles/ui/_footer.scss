@@ -105,6 +105,11 @@
         margin-right: 8px;
     }
 }
+@media (min-width: 1151px) {
+    .js-footer-body {
+        display: block!important;
+    }
+}
 
 @media (max-width: 1150px) {
 
