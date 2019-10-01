@@ -6,14 +6,14 @@
 @import 'modules/typography';
 
 //ui
-@import 'ui/header';
 @import 'ui/main';
-@import 'ui/footer';
 @import 'ui/forms';
 @import 'ui/links';
 @import 'ui/section';
 @import 'ui/tile';
 @import 'ui/news';
+@import 'ui/header';
+@import 'ui/footer';
 
 //component styles
 @import '../components/slider/slider';

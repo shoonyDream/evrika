@@ -20,4 +20,62 @@
     		border-bottom-color: $twine-color;
     	}
     }
+
+    &--inst {
+    	display: flex;
+    	font-size: 14px;
+    	font-weight: 700;
+    	align-items: center;
+    	text-transform: uppercase;
+    }
+}
+
+.fa-phone-alt,
+.fa-envelope,
+.fa-search,
+.fa-skype {
+    color: $twine-color;
+}
+
+.fa-search {
+    top: 50%;
+    right: 16px;
+    font-size: 16px;
+    position: absolute;
+    transform: translateY(-50%);
+    transition: color 0.2s linear;
+    color: rgba(193, 160, 103, 0.5);
+}
+
+.icon-pie {
+    width: 14px;
+    height: 14px;
+}
+.fa-whatsapp {
+	color: #65bc54;
+	font-size: 28px;
+}
+.fa-viber {
+	color: #8456a5;
+	font-size: 28px;
+}
+
+.fa-instagram {
+	font-size: 30px;
+	margin-left: 7px;
+	line-height: 40px;
+}
+
+.fa-gradient {
+	background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.white-circle {
+    width: 40px;
+    height: 40px;
+	margin-right: 25px;
+    border-radius: 50%;
+	background-color: $white;
 }

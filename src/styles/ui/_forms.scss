@@ -39,3 +39,42 @@ input {
 .form__item--search {
 	position: relative;
 }
+
+.form--subscribe {
+    margin-bottom: 60px;
+
+    .form__input {
+        color: $white;
+        background-color: transparent;
+
+        &::placeholder {
+            color: $white;
+            opacity: 0.8;
+        }
+
+        &:focus {
+            &::placeholder {
+                opacity: 0.5;
+            }
+        }
+    }
+
+    .form__submit {
+        border: none;
+        opacity: 0.8;
+        outline: none;
+        display: block;
+        font-size: 14px;
+        padding: 14px 0;
+        font-weight: 700;
+        color: $twine-color;
+        text-transform: uppercase;
+        background-color: transparent;
+    }
+
+    .form__item {
+        display: flex;
+        align-items: flex-end;
+        flex-direction: column;
+    }
+}
