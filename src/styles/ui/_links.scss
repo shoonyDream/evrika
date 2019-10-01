@@ -33,24 +33,13 @@
 .fa-phone-alt,
 .fa-envelope,
 .fa-search,
-.fa-skype {
+.fa-skype,
+.fa-clock,
+.fa-id-card,
+.fa-star {
     color: $twine-color;
 }
 
-.fa-search {
-    top: 50%;
-    right: 16px;
-    font-size: 16px;
-    position: absolute;
-    transform: translateY(-50%);
-    transition: color 0.2s linear;
-    color: rgba(193, 160, 103, 0.5);
-}
-
-.icon-pie {
-    width: 14px;
-    height: 14px;
-}
 .fa-whatsapp {
 	color: #65bc54;
 	font-size: 28px;
@@ -78,4 +67,16 @@
 	margin-right: 25px;
     border-radius: 50%;
 	background-color: $white;
+}
+
+@media (min-width: 1151px) {
+	.fa-search {
+	    top: 50%;
+	    right: 16px;
+	    font-size: 16px;
+	    position: absolute;
+	    transform: translateY(-50%);
+	    transition: color 0.2s linear;
+	    color: rgba(193, 160, 103, 0.5);
+	}
 }

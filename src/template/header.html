@@ -10,121 +10,64 @@
 
     <body>
         <header class="header">
-            <div class="header__top">
-                <div class="container container--wide">
-                    <nav class="top-nav">
-                        <div class="top-nav__row">
-                            <ul class="top-nav__list">
-                                <li class="top-nav__item">
-                                    <a href="#" class="top-nav__link">О&nbsp;магазине</a>
-                                </li>
-                                <li class="top-nav__item">
-                                    <a href="#" class="top-nav__link">Оплата</a>
-                                </li>
-                                <li class="top-nav__item">
-                                    <a href="#" class="top-nav__link">Доставка</a>
-                                </li>
-                                <li class="top-nav__item">
-                                    <a href="#" class="top-nav__link">Отзывы</a>
-                                </li>
-                                <li class="top-nav__item">
-                                    <a href="#" class="top-nav__link">Новости</a>
-                                </li>
-                                <li class="top-nav__item">
-                                    <a href="#" class="top-nav__link">Статьи</a>
-                                </li>
-                                <li class="top-nav__item">
-                                    <a href="#" class="top-nav__link">Контакты</a>
-                                </li>
-                            </ul>
-                            <div class="top-nav__services services-list">
-                                <div class="services-list__item">
-                                    <a href="#" class="top-nav__link">Личный кабинет</a>
-                                </div>
-                                <div class="services-list__item">
-                                    <a href="#" class="top-nav__link">Избранное <sup class="top-nav__sup">2</sup></a>
-                                </div>
-                            </div>
+            <div class="header--desktop">
+                <div class="header__top">
+                    <div class="container container--wide">
+                        ${require('./templates_area/top-nav.html')}
+                    </div>
+                </div>
+                <div class="header__main">
+                    <div class="container container--wide">
+                        <div class="logo">
+                            <img src="../images/logo.png" alt="">
                         </div>
-                    </nav>
+                        ${require('./templates_area/main-tools.html')}
+                        <a href="#" class="header__basket">
+                            <img src="../images/basket.svg" alt="">
+                            <span>4</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="header__nav">
+                    <div class="container container--wide">
+                        ${require('./templates_area/main-nav.html')}
+                    </div>
                 </div>
             </div>
-            <div class="header__main">
-                <div class="container container--wide">
-                    <div class="logo">
-                        <img src="../images/logo.png" alt="">
-                    </div>
-                    <div class="main-tools">
-                        <div class="main-tools__info">
-                            <form action="#" class="form">
-                                <div class="form__item form__item--search">
-                                    <input type="text" name="header-search" value size="40" placeholder="Поиск по каталогу товаров" class="form__input">
-                                    <i class="fas fa-search"></i>
+            <div class="header--mobile">
+                <div class="header__top">
+                    <div class="container container--wide">
+                        <div class="logo">
+                            <img src="../images/logo.png" alt="">
+                        </div>
+                        <button class="hamburger hamburger--squeeze js-toggle-nav" type="button">
+                            <span class="hamburger-box">
+                                <span class="hamburger-inner"></span>
+                            </span>
+                        </button>
+                        <div class="nav-container" style="display: none">
+                            ${require('./templates_area/top-nav.html')}
+                            ${require('./templates_area/main-nav.html')}
+                            ${require('./templates_area/main-tools.html')}
+                        </div>
+                        <div class="services-buttons">
+                            <div class="services-list">
+                                <div class="services-list__item">
+                                    <a href="#" class="top-nav__link top-nav__link--search"><i class="fas fa-search"></i></a>
                                 </div>
-                            </form>
-                            <div class="main-tools__contacts">
-                                <div class="contacts">
-                                    <div class="contacts__item">
-                                        <a href="tel:+74955420595" class="link contacts__link">+7 /495/ 542-05-95</a>
-                                    </div>
-                                    <div class="contacts__item">
-                                        <i class="fas fa-phone-alt"></i>
-                                        <a href="#" class="link contacts__link">Обратный звонок</a>
-                                    </div>
-                                    <div class="contacts__item">
-                                        <i class="far fa-envelope"></i>
-                                        <a href="mailto:info@lenoma.ru" class="link contacts__link">info@lenoma.ru</a>
-                                    </div>
-                                    <div class="contacts__item">
-                                        <img src="../images/pie.svg" alt="" class="icon-pie">
-                                        <span class="contacts__link">пн&mdash;пт 9.00&ndash;21.00</span>
-                                    </div>
+                                <div class="services-list__item">
+                                    <a href="#" class="top-nav__link"><i class="far fa-id-card"></i></a>
                                 </div>
+                                <div class="services-list__item">
+                                    <a href="#" class="top-nav__link"><i class="far fa-star"></i> <sup class="top-nav__sup">2</sup></a>
+                                </div>
+                                <a href="#" class="header__basket">
+                                    <img src="../images/basket.svg" alt="">
+                                    <span>4</span>
+                                </a>
                             </div>
                         </div>
                     </div>
-                    <a href="#" class="header__basket">
-                        <img src="../images/basket.svg" alt="">
-                        <span>4</span>
-                    </a>
-                </div>
-            </div>
-            <div class="header__nav">
-                <div class="container container--wide">
-                    <nav class="main-nav">
-                        <ul class="main-nav__list">
-                            <li class="main-nav__item">
-                                <a href="#" class="main-nav__link">Акция</a>
-                            </li>
-                            <li class="main-nav__item">
-                                <a href="#" class="main-nav__link">Парфюмерия</a>
-                            </li>
-                            <li class="main-nav__item">
-                                <a href="#" class="main-nav__link">Новинки</a>
-                            </li>
-                            <li class="main-nav__item">
-                                <a href="#" class="main-nav__link">Макияж</a>
-                            </li>
-                            <li class="main-nav__item">
-                                <a href="#" class="main-nav__link">Уход за&nbsp;кожей</a>
-                            </li>
-                            <li class="main-nav__item">
-                                <a href="#" class="main-nav__link">Уход за&nbsp;волосами</a>
-                            </li>
-                            <li class="main-nav__item">
-                                <a href="#" class="main-nav__link">Для мужчин</a>
-                            </li>
-                            <li class="main-nav__item">
-                                <a href="#" class="main-nav__link">Organic</a>
-                            </li>
-                            <li class="main-nav__item">
-                                <a href="#" class="main-nav__link">Подарки</a>
-                            </li>
-                            <li class="main-nav__item main-nav__item--special">
-                                <a href="#" class="main-nav__link">Sale</a>
-                            </li>
-                        </ul>
-                    </nav>
                 </div>
             </div>
         </header>

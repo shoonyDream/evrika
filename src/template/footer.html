@@ -6,8 +6,8 @@
                 <div class="container container--wide">
                     <div class="footer__row">
                         <div class="footer__col">
-                            <a href="#" class="link footer__title">О&nbsp;компании</a>
-                            <nav class="footer-nav">
+                            <span class="footer__title js-footer-header">О&nbsp;компании</span>
+                            <nav class="footer-nav js-footer-body">
                                 <ul class="footer-nav__list">
                                     <li class="footer-nav__item">
                                         <a href="#" class="link footer-nav__link">О&nbsp;магазине</a>
@@ -34,8 +34,8 @@
                             </nav>
                         </div>
                         <div class="footer__col">
-                            <a href="#" class="link footer__title">Каталог</a>
-                            <nav class="footer-nav">
+                            <span class="footer__title js-footer-header">Каталог</span>
+                            <nav class="footer-nav js-footer-body">
                                 <ul class="footer-nav__list">
                                     <li class="footer-nav__item">
                                         <a href="#" class="link footer-nav__link">Женская парфюмерия</a>
@@ -62,8 +62,9 @@
                             </nav>
                         </div>
                         <div class="footer__col">
-                            <a href="tel:+74955420595" class="link footer__title">+7 /495/ 542-05-95</a>
-                            <div class="contacts">
+                            <a href="tel:+74955420595" class="link footer__title mobile-hide">+7 /495/ 542-05-95</a>
+                            <span class="footer__title js-footer-header mobile-show">Контакты</span>
+                            <div class="contacts js-footer-body">
                                 <div class="contacts__item contacts__item--additional">
                                     <p class="contacts__text">Мы&nbsp;доступны также
                                         <a href="#" class="contacts__icon"><i class="fab fa-whatsapp"></i></a>
@@ -86,19 +87,21 @@
                             </div>
                         </div>
                         <div class="footer__col">
-                            <span class="footer__title">Подписаться на&nbsp;новости</span>
-                            <form action="#" class="form form--subscribe">
-                                <div class="form__item">
-                                    <input type="text" name="email" value size="40" placeholder="Введите email" class="form__input">
-                                    <button class="form__submit" type="submit" name="subscribe-submit">Подписаться</button>
-                                </div>
-                            </form>
-                            <a href="#" class="link link--inst">
-                                <div class="white-circle">
-                                    <i class="fab fa-instagram fa-gradient"></i>
-                                </div>
-                                <span>Присоединяйтесь к&nbsp;нам</span>
-                            </a>
+                            <span class="footer__title js-footer-header">Подписаться на&nbsp;новости</span>
+                            <div class="js-footer-body">
+                                <form action="#" class="form form--subscribe">
+                                    <div class="form__item">
+                                        <input type="text" name="email" value size="40" placeholder="Введите email" class="form__input">
+                                        <button class="form__submit" type="submit" name="subscribe-submit">Подписаться</button>
+                                    </div>
+                                </form>
+                                <a href="#" class="link link--inst">
+                                    <div class="white-circle">
+                                        <i class="fab fa-instagram fa-gradient"></i>
+                                    </div>
+                                    <span>Присоединяйтесь к&nbsp;нам</span>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -107,7 +110,7 @@
                 <div class="container container--wide">
                     <div class="copyright">
                         <div class="copyright__item">&copy;&nbsp;2017. Lenoma.ru</div>
-                        <div class="copyright__item"><img src="../images/idea.svg" alt="" class="copyright__img">Разработка и&nbsp;поддержка&nbsp;&mdash; &laquo;ЭВРИКА&raquo;</div>
+                        <div class="copyright__item"><img src="../images/idea.svg" alt="" class="copyright__img"><a href="#" class="link">Разработка и&nbsp;поддержка&nbsp;&mdash; &laquo;ЭВРИКА&raquo;</a></div>
                     </div>
                 </div>
             </div>

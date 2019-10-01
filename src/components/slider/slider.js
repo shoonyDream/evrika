@@ -1,24 +1,5 @@
 import Swiper from 'swiper/js/swiper.min.js';
 
-// $(document).ready(function () {
-//   //initialize swiper when document ready
-//   var mySwiper = new Swiper ('.swiper-container', {
-//     // Optional parameters
-//     direction: 'horizontal',
-//     loop: true,
-//     // If we need pagination
-//     pagination: {
-//       el: '.swiper-pagination',
-//     },
-
-//     // Navigation arrows
-//     navigation: {
-//       nextEl: '.swiper-button-next',
-//       prevEl: '.swiper-button-prev',
-//     },
-//   })
-// });
-
 var arWorkSwiper = [];
 $('.js-swiper--work').each(function (index) {
   var $el = $(this),
@@ -54,7 +35,18 @@ $('.js-swiper--work').each(function (index) {
       nextEl: `.swiper-button-next--work-${index}`,
       prevEl: `.swiper-button-prev--work-${index}`,
     },
-    ...extraOptions
+    breakpoints: {
+      320: {
+        slidesPerView: 1
+      },
+      420: {
+        slidesPerView: 2
+      },
+      768: {
+        slidesPerView: 4
+      }
+    },
+    ...extraOptions,
   });
 
 

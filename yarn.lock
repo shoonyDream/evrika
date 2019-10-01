@@ -5806,6 +5806,10 @@ vary@~1.1.2:
   version "1.1.2"
   resolved "http://npm.3ebra.int/vary/-/vary-1.1.2.tgz#2299f02c6ded30d4a5961b0b9f74524a18f634fc"
 
+velocity-animate@^1.5.2:
+  version "1.5.2"
+  resolved "http://npm.3ebra.int/velocity-animate/-/velocity-animate-1.5.2.tgz#5a351d75fca2a92756f5c3867548b873f6c32105"
+
 vendors@^1.0.0:
   version "1.0.3"
   resolved "http://npm.3ebra.int/vendors/-/vendors-1.0.3.tgz#a6467781abd366217c050f8202e7e50cc9eef8c0"

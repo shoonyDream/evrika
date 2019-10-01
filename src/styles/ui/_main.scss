@@ -21,9 +21,21 @@ body {
 	}
 }
 
-@media (max-width: 768px) {
+.mobile-show {
+	display: none!important;
+}
+
+@media (max-width: 1150px) {
 	.container {
 		padding-left: 20px;
 		padding-right: 20px;
+	}
+
+	.mobile-hide {
+		display: none!important;
+	}
+
+	.mobile-show {
+		display: block!important;
 	}
 }

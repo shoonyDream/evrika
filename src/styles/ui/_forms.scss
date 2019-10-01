@@ -78,3 +78,9 @@ input {
         flex-direction: column;
     }
 }
+
+@media (max-width: 768px) {
+    .form--subscribe {
+        margin-bottom: 20px;
+    }
+}
