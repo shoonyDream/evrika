@@ -38,6 +38,7 @@
     }
 
     &--half-background {
+        padding-top: 35px;
         position: relative;
 
         &:before {
@@ -117,6 +118,10 @@
             &:before {
                 display: none;
             }
+        }
+
+        + .section {
+            margin-top: 50px;
         }
     }
 }

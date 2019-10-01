@@ -4,6 +4,18 @@ input {
     display: block;
 }
 
+.form__item--search {
+    .fa-search {
+        top: 50%;
+        right: 16px;
+        font-size: 16px;
+        position: absolute;
+        transform: translateY(-50%);
+        transition: color 0.2s linear;
+        color: rgba(193, 160, 103, 0.5);
+    }
+}
+
 .form__input {
     width: 100%;
     max-width: 100%;
