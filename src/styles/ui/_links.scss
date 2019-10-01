@@ -9,7 +9,7 @@
     }
 
     &--revert {
-    	font-size: 14px;
+    	font-size: 12px;
     	font-weight: 700;
     	color: $twine-color;
     	text-transform: uppercase;
@@ -23,9 +23,10 @@
 
     &--inst {
     	display: flex;
-    	font-size: 14px;
+    	font-size: 12px;
     	font-weight: 700;
     	align-items: center;
+        letter-spacing: 1.3px;
     	text-transform: uppercase;
     }
 }

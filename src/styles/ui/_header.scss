@@ -98,6 +98,7 @@
         &__row {
             height: 100%;
             display: flex;
+            justify-content: space-between;
         }
 
         &__list {
@@ -105,8 +106,8 @@
             height: 100%;
             display: flex;
             margin-right: 1rem;
-            max-width: 58.33333%;
-            flex-basis: 58.33333%;
+            max-width: 53.5%;
+            flex-basis: 53.5%;
             justify-content: space-between;
         }
 
@@ -223,7 +224,7 @@
     justify-content: flex-end;
 
     &__item {
-        padding-left: 2.5rem;
+        padding-left: 1.3rem;
         padding-right: 2.5rem;
 
         &:last-child {
@@ -249,6 +250,7 @@
         top: 100%;
         z-index: 2;
         width: 100%;
+        max-width: 320px;
         overflow: auto;
         position: absolute;
         padding-bottom: 30px;
@@ -396,7 +398,7 @@
 }
 
 @media (max-width: 420px) {
-    .services-list__item .top-nav__link {
+    .services-list__item .services-list__link {
         padding: 0 7px;
         font-size: 16px;
     }

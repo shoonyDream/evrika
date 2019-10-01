@@ -1,6 +1,15 @@
 .slider-simple {
 	position: relative;
 
+	&--padding {
+		padding-left: 80px;
+		padding-right: 80px;
+	}
+
+	.swiper-slide__wrapper {
+	    padding: 3px 34px 30px;
+	}
+
 	.swiper-container--work {
 		position: relative;
 
@@ -11,8 +20,8 @@
 				position: relative;
 			}
 		}
-
 	}
+
 	.swiper-controls {
 		margin-top: 0;
 	}
@@ -35,7 +44,7 @@
 	}
 
 	.swiper-button-next {
-		right: -90px;
+		right: -40px;
 		top: 50%;
 		bottom: 0;
 		margin-top: -3rem;
@@ -45,7 +54,7 @@
 	}
 
 	.swiper-button-prev {
-		left: -90px;
+		left: -40px;
 		top: 50%;
 		bottom: 0;
 		margin-top: -3rem;
@@ -67,8 +76,6 @@
 }
 
 .swiper-container--hero {
-	.swiper-wrapper {
-	}
 
 	.swiper-slide {
 		min-height: 485px;
@@ -133,7 +140,7 @@
     &__info {
 		max-width: 550px;
     	position: relative;
-    	padding: 100px 0 150px;
+    	padding: 140px 0 150px;
     }
 
     &__product {
@@ -145,7 +152,8 @@
 
 		> span {
 			flex-shrink: 0;
-			margin-left: 50px;
+			font-size: 13px;
+			margin-left: 55px;
 		}
 
 		> img {
@@ -158,18 +166,19 @@
 		display: block;
 		font-size: 56px;
 		font-weight: 700;
-		line-height: 1.4;
+		line-height: 1.2;
 		margin-bottom: 30px;
 	}
 
 	&__link {
 	    left: 0;
 	    width: 220px;
-	    bottom: 120px;
-	    font-size: 14px;
+	    bottom: 80px;
+	    font-size: 12px;
 	    font-weight: 700;
 	    position: absolute;
 	    color: $twine-color;
+	    padding-bottom: 15px;
 	    letter-spacing: 0.8px;
 	    text-decoration: none;
 	    text-transform: uppercase;

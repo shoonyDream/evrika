@@ -17,8 +17,12 @@ body {
 	padding-right: 20px;
 
 	&--wide {
-		max-width: 1300px;
+		max-width: 1350px;
 	}
+}
+
+.tablet-show {
+	display: none!important;
 }
 
 .mobile-show {
@@ -31,6 +35,16 @@ body {
 		padding-right: 20px;
 	}
 
+	.tablet-hide {
+		display: none!important;
+	}
+
+	.tablet-show {
+		display: block!important;
+	}
+}
+
+@media (max-width: 768) {
 	.mobile-hide {
 		display: none!important;
 	}
