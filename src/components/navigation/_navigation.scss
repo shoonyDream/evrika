@@ -50,6 +50,7 @@ $hamburger-types: (
 	overflow: visible;
 	color: rgba(255, 255, 255, 0.9);
 	text-transform: uppercase;
+	outline: none;
 
 	.hamburger-inner, .hamburger-inner::after {
 		transition-property: background-color, color;
@@ -65,7 +66,7 @@ $hamburger-types: (
 			opacity: $hamburger-hover-opacity;
 		}
 
-		color: #ef7f1a !important;
+		color: $twine-color !important;
 
 		.hamburger-inner, .hamburger-inner::after {
 			background-color: $twine-color !important;
@@ -73,10 +74,10 @@ $hamburger-types: (
 	}
 
 	&.is-active {
-		color: #fff !important;
+		color: $white !important;
 
 		.hamburger-inner, .hamburger-inner::after {
-			background-color: #fff !important;
+			background-color: $white !important;
 		}
 	}
 }
