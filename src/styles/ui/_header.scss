@@ -216,11 +216,11 @@
             text-decoration: none;
             color: $baltic-sea-color;
         }
-
-        &__link:hover {
-            color: $twine-color;
-        }
     }
+}
+
+.header a.contacts__link:hover {
+    color: $twine-color;
 }
 
 .services-list {
