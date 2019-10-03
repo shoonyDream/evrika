@@ -216,6 +216,10 @@
             text-decoration: none;
             color: $baltic-sea-color;
         }
+
+        &__link:hover {
+            color: $twine-color;
+        }
     }
 }
 

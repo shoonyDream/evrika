@@ -1,10 +1,23 @@
+.slider-simple .swiper-container:not(.swiper-container-initialized) {
+	max-height: 350px;
+	opacity: 0;
+}
+
+.slider-simple .swiper-container-initialized .swiper-slide__content {
+	margin-left: -2px;
+	margin-right: -2px;
+	border-right: 1px solid $mischka;
+}
+
+.slider-simple--padding .swiper-container-initialized .swiper-slide__content {
+	margin-left: 0;
+	margin-right: 0;
+	border-right: none;
+ }
+
 .slider-simple {
 	position: relative;
 
-	&--padding {
-		padding-left: 80px;
-		padding-right: 80px;
-	}
 
 	.swiper-slide__wrapper {
 	    padding: 3px 34px 30px;
@@ -20,6 +33,11 @@
 				position: relative;
 			}
 		}
+	}
+
+	&--padding {
+		padding-left: 80px;
+		padding-right: 80px;
 	}
 
 	.swiper-controls {
