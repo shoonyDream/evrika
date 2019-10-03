@@ -1,47 +1,22 @@
-# Webpack 4 Boilerplate ES6/Sass with build-in option to change preprocessor (less/stylus)
-This <strong>Webpack 4 Boilerplate</strong> comes with 2 builds:
+сылка на проект:
+https://shoonydream.github.io/evrika/
 
 ```
-npm run build:dev
+yarn start
+yarn build:dev
+yarn build:prod
+yarn deploy
 ```
--> starts dev server on <code>localhost:8080</code> with livereload, sourcemap<br><br>
+Для ускорения работы и "немыльности" при рендере, использовала иконочный шрифт (иконки могут немного отличаться, так как использовала бесплатные из того же смыслового ряда). Так бы запросила свг у диза. Свг корзины стырила из консоли иконочного шрифта =).
 
-```
-npm run build:prod
-```
--> creates prod files to <code>/dist</code> with:
+Не стала делать виджет, так как по макету непонятно его логики (в слайдере, фикс к правой стороне, меняется ли там что-то - требуются уточнения по его цели).
 
-  1. compiles sass/stylus/less to css <br>
-  2. autoprefixer for vendor prefixes (browser compability) <br>
-  3. compiles ES6+ to ES5 <br>
-  4. minifying for css/js <br>
-  5. uglyfing js code <br>
-  6. hash css and js file (file versioning for browser caching -> cache busting) <br>
+Использовала другой шрифт - возникли трудности с отступами из-за line-height, рендера самого шрифта. Размеры текста, заголовков, отступы правила по перфект пикселю, где-то немного округляла, чтобы не было значений типа: padding-top: 13px.
 
-## Setup
-1. git clone https://github.com/mwieth/Webpack-4-boilerplate.git
-2. run <code>npm install</code> in project folder
-3. <code>npm run build:dev</code>
+У смысловых блоков (section), а также их деток (header, body) намеренно сделала одинаковые отступы (заявка на ритм - обычно советуюсь с дизом).
 
-## Preprocessor support (default: Sass)
+Максимальная ширина у контейнера по расчетам должна быть 1340px, у меня 1350px по подгону перфект пикселя (немного заблудилась, поэтому решила ориентироваться хоть на что-то).
 
---> if u want to change to <strong>less</strong> run:
+Вопрос к дизайнеру по кнопке sale на десктопе - выбивается из контентной области или продолжение при большом экране у меню должно быть в ее цвет?
 
-  1. <code>npm install less less-loader --save-dev</code>
-  2. <code>npm uninstall node-sass sass-loader</code>
-
-  3. set <code>selectedPreprocessor</code> in \webpack\loader.js to less
-
-  4. change default files in styles from sass to less (*.less) and update <code>import</code> in index.js line 1
-
---> if u want to change to <strong>stylus</strong> run:
-
-  1. <code>npm install stylus stylus-loader --save-dev</code>
-  2. <code>npm uninstall node-sass sass-loader</code>
-
-  3. set <code>selectedPreprocessor</code> in \webpack\loader.js to stylus
-
-  4. change default files in styles from sass to stylus (*.styl) update <code>import</code> in index.js line 1
-
---> if u want to use the 'original' loose <strong>*.sass</strong> syntax just change the files from
-*.scss to *.sass and update <code>import</code> in index.js line 1
+Все верстала на флексах.
