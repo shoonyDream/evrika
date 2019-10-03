@@ -18,7 +18,7 @@ $('.js-swiper--work').each(function (index) {
 
   arWorkSwiper[index] = new Swiper(`.js-swiper--work-${index}`, {
     lazy: true,
-    spaceBetween: 20,
+    spaceBetween: 3,
     loop: false,
     slidesPerView: 4,
     speed: 900,

@@ -4,21 +4,24 @@
     }
 
     &__title {
-        width: 100%;
+        width: auto;
         line-height: 1;
         font-size: 30px;
         line-height: 1.2;
         font-weight: 700;
+        min-width: 420px;
         text-align: center;
+        padding-left: 20px;
+        padding-right: 20px;
         padding-bottom: 18px;
+        display: inline-block;
         color: $baltic-sea-color;
         text-transform: uppercase;
-        border-bottom: 1px solid $twine-color;
+        border-bottom: 2px solid $twine-color;
     }
 
     &__header {
         display: flex;
-        max-width: 420px;
         margin-left: auto;
         margin-right: auto;
         position: relative;
