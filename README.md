@@ -4,7 +4,7 @@
   https://shoonydream.github.io/evrika/
 
 ```
-yarn start - начало работы
+yarn start - начало работы, # dev-сервер для разработки
 yarn build:prod # сборка в production-режиме
 ```
 
